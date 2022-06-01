@@ -127,10 +127,10 @@
             height: 70px;
             font-size: 50px;
         }
-        
+
         .menu__main {
             width: 700px;
-            
+
             .menu__brand {
                 width: 500px;
                 height: 150px;
@@ -188,63 +188,63 @@
 
 /*LARGE SCREEN*/
 @media (min-width: 1000px) {
-.menu__main-container {
-    width: 1000px;
-
-    h1 {
-        width: 1000px;
-    }
-
-    .menu__main {
+    .menu__main-container {
         width: 1000px;
 
-        .menu__brand {
-            width: 700px;
-            height: 180px;
-
-            img {
-                width: 95px;
-                height: 95px;
-            }
-
-            button {
-                width: 95px;
-                height: 95px;
-            }
+        h1 {
+            width: 1000px;
         }
 
-        .menu__container {
-            height: 375px;
+        .menu__main {
+            width: 1000px;
 
-            .menu__img-dish {
-                width: 375px;
-                height: 325px;
-                margin-left: 10px;
+            .menu__brand {
+                width: 700px;
+                height: 180px;
 
                 img {
-                    width: 285px;
-                    height: 295px;
+                    width: 95px;
+                    height: 95px;
+                }
+
+                button {
+                    width: 95px;
+                    height: 95px;
                 }
             }
 
-            .menu__description-container {
-                width: 350px;
-                height: 270px;
-                margin-left: 80px;
+            .menu__container {
+                height: 375px;
 
-                h3 {
-                    font-size: 37px;
+                .menu__img-dish {
+                    width: 375px;
+                    height: 325px;
+                    margin-left: 10px;
+
+                    img {
+                        width: 285px;
+                        height: 295px;
+                    }
                 }
 
-                p {
-                    font-size: 25px;
-                }
+                .menu__description-container {
+                    width: 350px;
+                    height: 270px;
+                    margin-left: 80px;
 
-                .price {
-                    font-size: 35px;
+                    h3 {
+                        font-size: 37px;
+                    }
+
+                    p {
+                        font-size: 25px;
+                    }
+
+                    .price {
+                        font-size: 35px;
+                    }
                 }
             }
         }
     }
-}
 }
