@@ -1,0 +1,228 @@
+.mainmenu__main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 350px;
+    box-shadow: 0px 8px 32px rgba(153, 153, 153, 0.3);
+
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+        border-radius: 20px;
+        text-align: center;
+        height: 100px;
+        width: 350px;
+        position: relative;
+        top: -40px;
+        background-color: #F0F2F5;
+        z-index: 1;
+    }
+}
+
+.mainmenu__background {
+    background-image: url("../../../public/assets/taco-milanesa.jpg");
+    background-size: cover;
+    width: 350px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .mainmenu__logo {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.mainmenu__contact-contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 8px 32px rgba(153, 153, 153, 0.3);
+
+    p{
+        font-size: 25px;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .mainmenu__contact-logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 300px;
+        
+
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+.mainmenu__nav {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    width: 300px;
+    font-size: 30px;
+    position: relative;
+    top: -50px;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 8px 32px rgba(153, 153, 153, 0.3);
+
+    .link {
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+        border-radius: 20px;
+        height: 90px;
+        width: 280px;
+
+        &:hover {
+            height: 95px;
+            width: 285px;
+            background-image: none;
+            background-color: #FFB929;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+            transition: 0.3s;
+            color: #191818;
+        }
+    }
+
+    .antojito {
+        background-image: url("../../../public/assets/tlayoyo.jpg");
+        background-size: cover;
+    }
+
+    .tamal {
+        background-image: url("../../../public/assets/tamal-chile.jpg");
+        background-size: cover;
+    }
+
+    .taco {
+        background-image: url("../../../public/assets/taco-pastor.jpg");
+        background-size: cover;
+    }
+
+    .bebida {
+        background-image: url("../../../public/assets/agua-sandia.jpg");
+        background-size: cover;
+    }
+}
+
+/*MEDIUM SCREEN*/
+@media (min-width: 700px) {
+
+    .mainmenu__main-container {
+        width: 700px;
+
+        h1 {
+            width: 100%;
+        }
+    }
+
+    .mainmenu__background {
+        width: 100%;
+        height: 200px;
+
+        .mainmenu__logo {
+            width: 90px;
+            height: 90px;
+        }
+    }
+
+    .mainmenu__nav-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .mainmenu__nav {
+        width: 90%;
+        padding: 20px;
+        font-size: 40px;
+
+        .link {
+            width: 100%;
+            height: 95px;
+
+            &:hover {
+                height: 100px;
+                width: 100%;
+            }
+        }
+    }
+
+    .mainmenu__contact-contain {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+
+/*LARGE SCREEN*/
+@media (min-width: 1000px) {
+
+    .mainmenu__main-container {
+        width: 1000px;
+
+        h1 {
+            width: 100%;
+        }
+    }
+
+    .mainmenu__background {
+        width: 100%;
+        height: 300px;
+
+        .mainmenu__logo {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    .mainmenu__nav-container{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mainmenu__nav {
+        width: 500px;
+        padding: 20px;
+        font-size: 40px;
+
+        .link {
+            width: 100%;
+            height: 95px;
+
+            &:hover {
+                height: 100px;
+                width: 100%;
+            }
+        }
+    }
+
+    .mainmenu__contact-contain {
+        width: 300px;
+        height: 460px;
+        padding: 20px;
+    }
+
+}
